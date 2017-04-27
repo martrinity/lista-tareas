@@ -59,17 +59,18 @@ var res = [
     "title": "illo est ratione doloremque quia maiores aut",
     "completed": true
   }
-  ];function listaTareas(){
+  ]
+  
 
 function lista(){
-var primerasTareas = document.getElementById("lista");
-res.forEach(function(el){
-    primerasTareas.innerHTML += '<li>' + el.title + '</li>';
-
-})
+    var primerasTareas = document.getElementById("lista");
+//aqui se va imprimir
+    res.forEach(function(el){ 
+// forEach +  para que recorra
+      primerasTareas.innerHTML += '<li>' + el.title + '</li>';
+    })    
 }
 lista();
-
 /*oton para ingresar nueva tarea
 function ingresarTarea(){
     var tareas = document.getElementById("lista"); 
