@@ -60,7 +60,7 @@ var res = [
     "completed": true
   }
   ]
-  
+
 
 function lista(){
     var primerasTareas = document.getElementById("lista");
@@ -71,10 +71,12 @@ function lista(){
     })    
 }
 lista();
-/*oton para ingresar nueva tarea
+
+
+//Boton para ingresar nueva tarea
 function ingresarTarea(){
-    var tareas = document.getElementById("lista"); 
-    var ingresar= document.getElementById("tareaInput").value;
-        tareas.innerHTML += '<li>' + ingresar + '</li>';
+    var primerasTareas = document.getElementById("lista"); 
+    var ingresar= document.getElementById("tarea").value;
+        primerasTareas.innerHTML += '<li>' + ingresar + '</li>';
     }
-ingresarTarea();*/
+ingresarTarea();
